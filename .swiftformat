@@ -1,0 +1,32 @@
+# file options
+
+--swiftversion 5.9
+--exclude .build, **/*/Diagnostics.swift, **/*/DiagnosticsType.swift
+
+# format options
+--voidtype void
+--ifdef no-indent
+--indent 4
+--importgrouping testable-bottom
+--maxwidth 100
+--stripunusedargs always
+--trimwhitespace always
+--wraparguments before-first
+--wrapcollections before-first
+--wrapconditions after-first
+--typeattributes prev-line
+--funcattributes prev-line
+--varattributes prev-line
+--lineaftermarks true
+--typeblanklines remove
+--extensionacl on-declarations
+--asynccapturing explicit
+--throwcapturing explicit
+--guardelse same-line
+--elseposition same-line
+--header \n {file}\n\n Created by Ahmed Ali (github.com/Ahmed-Ali) on {created}.\n
+
+## Rules
+--enable preferKeyPath, leadingDelimiters, linebreakAtEndOfFile, conditionalAssignment, consecutiveBlankLines, redundantReturn, redundantObjc, redundantSelf, redundantVoidReturnType, redundantFileprivate, redundantType, redundantExtensionACL, redundantGet, redundantInit, redundantLet, redundantPattern, redundantRawValues, duplicateImports, emptyBraces, spaceAroundParens, spaceInsideBraces, spaceInsideBrackets, strongifiedSelf, todos, trailingClosures, wrapSingleLineComments, wrapSwitchCases, yodaConditions
+
+--disable trailingCommas, andOperator, wrapMultilineStatementBraces
