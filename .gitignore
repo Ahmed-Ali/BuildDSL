@@ -1,0 +1,9 @@
+.DS_Store
+/.build
+/.swiftpm
+/Packages
+/*.swiftinterface
+/*.xcodeproj
+xcuserdata/
+.vscode/
+.claude

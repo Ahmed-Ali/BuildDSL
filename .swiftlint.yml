@@ -1,0 +1,12 @@
+disabled_rules: 
+  - line_length
+  - identifier_name
+
+excluded: # paths or files to ignore during linting. Takes precedence over `included`.  
+  - .build
+  - Package.swift
+  - Tests
+
+strict: true
+
+reporter: "xcode" 

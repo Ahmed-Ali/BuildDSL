@@ -1,0 +1,13 @@
+version: 1
+builder:
+  configs:
+    - platform: ios
+      scheme: BuildDSL
+    - platform: macos
+      scheme: BuildDSL
+    - platform: tvos
+      scheme: BuildDSL
+    - platform: watchos
+      scheme: BuildDSL
+    - platform: visionos
+      scheme: BuildDSL
