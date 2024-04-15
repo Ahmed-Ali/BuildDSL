@@ -1,0 +1,24 @@
+{
+  "originHash" : "f50bfa61790990bf4bfe36a55c7c976fd799f9af19aecf85a907235440d59514",
+  "pins" : [
+    {
+      "identity" : "lefthook-plugin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/csjones/lefthook-plugin.git",
+      "state" : {
+        "revision" : "348e8fccfa863b3805c21e25aa2a6f08cd45d94a",
+        "version" : "1.6.10"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "fa8f95c2d536d6620cc2f504ebe8a6167c9fc2dd",
+        "version" : "510.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

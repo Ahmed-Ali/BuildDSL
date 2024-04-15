@@ -1,0 +1,14 @@
+disabled_rules: 
+  - line_length # Handled by swiftformat 
+  - identifier_name # Not great for for loops
+
+excluded: # paths or files to ignore during linting. Takes precedence over `included`.  
+  - .build
+  - Package.swift
+  - Tests
+
+strict: true # If true, SwiftLint will treat all warnings as errors.
+
+force_exclusion: true # if true, will fail if there are SwiftLint violations in the excluded files
+
+reporter: "emoji" # reporter type (xcode, json, csv, checkstyle, codeclimate, junit, html, emoji, sonarqube, markdown, github-actions-logging)

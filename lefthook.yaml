@@ -1,0 +1,15 @@
+pre-push:
+  commands:
+    1_test:
+      run: swift test
+
+pre-commit:
+  commands:
+    1_swiftformat:
+      glob: "*.{swift}"
+      run: swiftformat --config .swiftformat {all_files}
+    2_swiftlint:
+      glob: "*.{swift}"
+      run: swiftlint --fix --config .swiftlint.yaml {all_files}
+    3_git:
+      run: git add -A
