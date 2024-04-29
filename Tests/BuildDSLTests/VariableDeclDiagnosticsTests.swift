@@ -5,8 +5,10 @@
 //
 
 import SwiftDiagnostics
+import SwiftParser
 import SwiftSyntax
 import XCTest
+
 @testable import BuildDSLMacros
 final class VariableDeclDiagnosticsTests: XCTestCase {
     func testValidProperties() throws {
@@ -55,8 +57,9 @@ final class VariableDeclDiagnosticsTests: XCTestCase {
     }
 
     func testRejectingInvalidDecl() throws {
+        var parser = Parser("var m: Str = ``")
         XCTAssertTrue(
-            try VariableDeclSyntax("var m: Str = ``").validateAsVar().hasError
+            DeclSyntax.parse(from: &parser).validateAsVar().hasError
         )
     }
 }
