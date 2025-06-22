@@ -6,9 +6,17 @@
 
 import BuildDSL
 import Foundation
-import os
-
+#if canImport(OSLog)
+import OSLog
 let logger = Logger(subsystem: "Examples", category: "BuildDSL")
+#else
+struct Logger {
+    init(subsystem: String, category: String) {}
+    func info(_ message: String) {}
+    func error(_ message: String) {}
+}
+let logger = Logger(subsystem: "Examples", category: "BuildDSL")
+#endif
 
 /**
  Example usages of the @Builder macro and its suplimentary @Default, @Ignore and @Escaping macros.
