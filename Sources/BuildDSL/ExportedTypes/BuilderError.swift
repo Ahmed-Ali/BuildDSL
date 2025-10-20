@@ -27,7 +27,7 @@ import Foundation
 ///     .someProperty("value")
 ///     // Missing required property "otherProperty"
 /// }
-/// 
+///
 /// switch result {
 /// case .success(let instance):
 ///     print("Success: \(instance)")

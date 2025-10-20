@@ -27,6 +27,6 @@
 --header \n {file}\n\n Created by Ahmed Ali (github.com/Ahmed-Ali) on {created}.\n
 
 ## Rules
---enable preferKeyPath, leadingDelimiters, linebreakAtEndOfFile, conditionalAssignment, consecutiveBlankLines, redundantReturn, redundantObjc, redundantSelf, redundantVoidReturnType, redundantFileprivate, redundantType, redundantExtensionACL, redundantGet, redundantInit, redundantLet, redundantPattern, redundantRawValues, duplicateImports, emptyBraces, spaceAroundParens, spaceInsideBraces, spaceInsideBrackets, strongifiedSelf, todos, trailingClosures, wrapSingleLineComments, wrapSwitchCases, yodaConditions
+--enable preferKeyPath, leadingDelimiters, linebreakAtEndOfFile, conditionalAssignment, consecutiveBlankLines, redundantReturn, redundantObjc, redundantSelf, redundantVoidReturnType, redundantFileprivate, redundantType, redundantExtensionACL, redundantGet, redundantInit, redundantLet, redundantPattern, redundantRawValues, duplicateImports, emptyBraces, spaceAroundParens, spaceInsideBraces, spaceInsideBrackets, strongifiedSelf, todos, wrapSingleLineComments, wrapSwitchCases, yodaConditions
 
---disable trailingCommas, andOperator, wrapMultilineStatementBraces
+--disable trailingCommas, andOperator, wrapMultilineStatementBraces, trailingClosures

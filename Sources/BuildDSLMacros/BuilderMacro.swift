@@ -11,7 +11,7 @@ import SwiftSyntaxBuilder
 import SwiftSyntaxMacros
 
 public struct BuilderMacro: ExtensionMacro {
-    nonisolated(unsafe)   private static var buildableTypes: Set<String> = Set()
+    private nonisolated(unsafe) static var buildableTypes: Set<String> = Set()
     public static func expansion(
         of _: AttributeSyntax,
         attachedTo decl: some DeclGroupSyntax,

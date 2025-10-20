@@ -30,7 +30,7 @@ import Foundation
 ///     .property1("value")
 ///     .property2(42)
 /// }
-/// 
+///
 /// // ...is transformed by DSLResultBuilder into a build result
 /// ```
 ///
@@ -79,7 +79,7 @@ public struct DSLResultBuilder<Builder: BuilderAPI> {
 
     /// Handles the second branch of a conditional expression in the builder.
     ///
-    /// - Parameter instance: The builder instance from the false branch. 
+    /// - Parameter instance: The builder instance from the false branch.
     /// - Returns: The builder instance for continued processing.
     public static func buildEither(second instance: Builder) -> Builder {
         instance

@@ -1,8 +1,7 @@
 # BuildDSL
 
-[![Swift](https://img.shields.io/badge/Swift-6.0+-orange.svg)](https://swift.org)
-[![Platforms](https://img.shields.io/badge/Platforms-iOS_13+_|_macOS_11+_|_tvOS_13+_|_watchOS_6+_|_visionOS_1+-blue.svg)](https://developer.apple.com)
-[![Swift Package Manager](https://img.shields.io/badge/SPM-compatible-4BC51D.svg?style=flat)](https://github.com/apple/swift-package-manager)
+[![Swift](https://img.shields.io/badge/Swift-6.2+-orange.svg)](https://swift.org)
+[![Platforms](https://img.shields.io/badge/Platforms-iOS_16+_|_macOS_14+_|_visionOS_2+-blue.svg)](https://developer.apple.com)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 BuildDSL is a Swift package that offers a robust Domain-Specific Language (DSL) for crafting intuitive builder APIs for Swift structs. It streamlines the creation of complex objects with a clean, type-safe syntax, utilizing Swift's `@resultBuilder`, protocols, and generics, along with an auto-generated Builder pattern.
@@ -31,7 +30,7 @@ Add BuildDSL to your project with Swift Package Manager by including the followi
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Ahmed-Ali/BuildDSL.git", from: "0.1.0")
+    .package(url: "https://github.com/Ahmed-Ali/BuildDSL.git", from: "1.0.0")
 ]
 ```
 
@@ -73,7 +72,7 @@ case .failure(let error):
 
 ## Documentation
 
-📚 **[Complete Documentation](https://ahmed-ali.github.io/BuildDSL/)**
+📚 **[Complete Documentation](https://github.com/Ahmed-Ali/BuildDSL/)**
 
 The full API documentation is available online, including:
 

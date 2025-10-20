@@ -10,7 +10,7 @@ import Foundation
 ///
 /// Types conforming to `BuildableAPI` gain access to a type-safe builder pattern
 /// with compile-time validation and fluent syntax for object construction.
-/// 
+///
 /// ## Overview
 ///
 /// The ``Builder`` macro automatically generates conformance to this protocol,
@@ -24,11 +24,11 @@ public protocol BuildableAPI<Builder> {
 
     /// A result builder type for creating fluent builder closures.
     typealias ResultBuilder = DSLResultBuilder<Builder>
-    
+
     /// The result type returned by build operations, containing either
     /// a successfully built instance or a ``BuilderError``.
     typealias Result = Swift.Result<Self, BuilderError>
-    
+
     /// A closure type that takes a builder and returns a build result.
     typealias Closure = (Builder) -> Self.Builder.Result
 }
@@ -49,7 +49,7 @@ public protocol BuildableAPI<Builder> {
 public protocol BuilderAPI<Buildable> {
     /// The type that this builder can construct.
     associatedtype Buildable: BuildableAPI
-    
+
     /// The result type for build operations.
     typealias Result = Buildable.Result
 
@@ -78,7 +78,7 @@ extension BuildableAPI {
     ///         .property1("value1")
     ///         .property2(42)
     /// }
-    /// 
+    ///
     /// switch result {
     /// case .success(let instance):
     ///     print("Built successfully: \(instance)")
